@@ -11,8 +11,3 @@ public class Admins {
     	   
        }
 }
-
-/**Admins add = new Admins(username, password);
-//registered.connect(person);
-JOptionPane.showMessageDialog(Booking.this, "Login Successful!");
-//registered.displayRegisteredPeople();**/
