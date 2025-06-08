@@ -1,1 +1,2 @@
-# Taxi-Drivers-Registration-App
+The provided Java code defines a Booking class that extends JFrame, creating a graphical user interface (GUI) for a taxi booking application. This interface serves as a gateway for users to either log in or sign up. The design is clean and user-friendly, with a focus on form validation and user interaction.
+The Booking class is part of the Cabb package and imports necessary Swing and AWT components to build the GUI. It features a main window titled "Welcome to Taxi Aid," which includes buttons for "Login" and "Sign Up." The window is non-resizable, centered on the screen, and prompts the user for confirmation before closing. The layout is organized using panels with BoxLayout and FlowLayout to ensure a structured appearance.
