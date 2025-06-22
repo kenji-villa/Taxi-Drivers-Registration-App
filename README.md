@@ -3,3 +3,6 @@ RemoveTaxiSQ deletes taxi records by taxiID from the database.
 TaxiService provides a utility method to create and configure AddTaxii objects.
 TaxiView retrieves taxi data from the database and formats it into a DefaultTableModel for display in a GUI, such as a Swing table.
 UpdateTaxi updates existing taxi records by first verifying the existence of the taxi via oldTaxiID and then applying new values from an AddTaxii object.
+
+
+FormAddT – Allows adding new taxis with fields for TaxiID, Capacity, Model, and Year. Validates input and checks for duplicate IDs before insertion. FormEditT – Enables editing existing taxi records by searching for a TaxiID and updating its details. Validates changes before submission. FormRemoveT – Deletes taxis by TaxiID after user confirmation via a checkbox. Includes validation to ensure the ID exists. FormVeiwT – Displays all taxi records in a JTable, fetching data from the database via TaxiView and dynamically updating the view.
