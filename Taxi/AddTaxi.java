@@ -18,7 +18,7 @@ public class AddTaxi {
 
 	    public void insertTaxiIntoDatabase(AddTaxii taxi) {
 	        // Database connection details
-	       String DbUrl = "jdbc:sqlserver://LENO\\SQLEXPRESS;databaseName=Adminstors;integratedSecurity=true;encrypt=false;portNumber=1433";
+	       String DbUrl = "jdbc:sqlserver://user\\SQLEXPRESS;databaseName=db_name;integratedSecurity=true;encrypt=false;portNumber=1433";
 
 	        // SQL INSERT statement
 	        String sql = "INSERT INTO Taxi (TaxiID, Capacity, Model, Year) VALUES (?, ?, ?, ?)";
