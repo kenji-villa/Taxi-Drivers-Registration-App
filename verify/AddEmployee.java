@@ -13,7 +13,7 @@ import java.util.Random;
 
 public class AddEmployee {
     public void AddEmps(UserAdd add) {
-        String DbUrl = "jdbc:sqlserver://LENO\\SQLEXPRESS;databaseName=Adminstors;integratedSecurity=true;encrypt=false;portNumber=1433";
+        String DbUrl = "jdbc:sqlserver://user\\SQLEXPRESS;databaseName=db_name;integratedSecurity=true;encrypt=false;portNumber=1433";
         String selectQuery = "SELECT Name, Email, Address, PhoneNumber, Dob, gender, DateOfJoin, Rating, Status FROM Employee";
         String insertQuery = "INSERT INTO Employee (Name, Email, Address, PhoneNumber, Dob, gender, DateOfJoin, Rating, Status, TaxiID) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
