@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class RemoveTaxiSQ {
 	public void deleteTaxiById(String taxiID) {
         // Database connection details
-        String dbUrl = "jdbc:sqlserver://LENO\\SQLEXPRESS;databaseName=Adminstors;integratedSecurity=true;encrypt=false;portNumber=1433";
+        String dbUrl = "jdbc:sqlserver://user\\SQLEXPRESS;databaseName=db_name;integratedSecurity=true;encrypt=false;portNumber=1433";
 
         // SQL DELETE statement
         String sql = "DELETE FROM Taxi WHERE TaxiID = ?";
