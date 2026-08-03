@@ -10,7 +10,7 @@ import java.sql.Statement;
 
 public class EditEmpp {
     public void editor(String oldEmail, String newEmail, String Name, String Address, String Dob, Long Phone, String gender) {
-        String dbUrl = "jdbc:sqlserver://LENO\\SQLEXPRESS;databaseName=Adminstors;integratedSecurity=true;encrypt=false;portNumber=1433";
+        String dbUrl = "jdbc:sqlserver://user\\SQLEXPRESS;databaseName=db_name;integratedSecurity=true;encrypt=false;portNumber=1433";
 
         try (Connection connection = DriverManager.getConnection(dbUrl);
              PreparedStatement deleteStatement = connection.prepareStatement("DELETE FROM Employee WHERE Email = ?");
