@@ -16,7 +16,7 @@ public class ExAdmins {
 	    //System.setProperty("java.library.path", "/path/to/dll/C:\\Program Files\\Java\\jdk-22\\bin");
 
 	    try {
-	        conn = DriverManager.getConnection("jdbc:sqlserver://LENO\\SQLEXPRESS;database=Adminstors;integratedSecurity=true; encrypt=false;portNumber=1433");
+	        conn = DriverManager.getConnection("jdbc:sqlserver://user\\SQLEXPRESS;database=db_name;integratedSecurity=true; encrypt=false;portNumber=1433");
 	        			
 	        String query = "SELECT Name, Password FROM Admin WHERE Name = ?";
 	        stmt = conn.prepareStatement(query);
