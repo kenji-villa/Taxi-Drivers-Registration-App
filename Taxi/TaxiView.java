@@ -13,7 +13,7 @@ import form.FormVeiwT;
 
 public class TaxiView {
     // Method to get the row count of the Taxi table
-	private static final String DB_URL = "jdbc:sqlserver://LENO\\SQLEXPRESS;databaseName=Adminstors;integratedSecurity=true;encrypt=false;portNumber=1433";
+	private static final String DB_URL = "jdbc:sqlserver://user\\SQLEXPRESS;databaseName=db_name;integratedSecurity=true;encrypt=false;portNumber=1433";
 
     public Connection connect() throws SQLException, ClassNotFoundException {
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
