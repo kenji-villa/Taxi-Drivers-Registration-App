@@ -10,7 +10,7 @@ import java.sql.Statement;
 public class NewAdmins {
        public void Addmin(NewUser add) {
     	   
-    	   String DbUrl = "jdbc:sqlserver://LENO\\SQLEXPRESS;databaseName=Adminstors;integratedSecurity=true;encrypt=false;portNumber=1433";
+    	   String DbUrl = "jdbc:sqlserver://user\\SQLEXPRESS;databaseName=db_name;integratedSecurity=true;encrypt=false;portNumber=1433";
     	    String selectQuery = "SELECT Name, Password, Email, Gender, PhoneNumber FROM Admin";
     	    String insertQuery = "INSERT INTO Admin (Name, Password, Email, Gender, PhoneNumber) VALUES ('" + add.Name + "', '" + add.Password + "', '" + add.Email + "', '" + add.Gender + "', " + add.PhoneNumber + ")";
 
