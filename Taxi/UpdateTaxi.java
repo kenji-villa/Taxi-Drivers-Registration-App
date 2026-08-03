@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class UpdateTaxi {
-	private static final String DB_URL = "jdbc:sqlserver://LENO\\SQLEXPRESS;databaseName=Adminstors;integratedSecurity=true;encrypt=false;portNumber=1433";
+	private static final String DB_URL = "jdbc:sqlserver://user\\SQLEXPRESS;databaseName=db_name;integratedSecurity=true;encrypt=false;portNumber=1433";
 
     public boolean updateTaxi(String oldTaxiID, AddTaxii newTaxi) {
         String searchQuery = "SELECT * FROM Taxi WHERE TaxiID = ?";
