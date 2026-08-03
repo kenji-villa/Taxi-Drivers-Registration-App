@@ -9,7 +9,7 @@ public class Remove {
 
 	public int deleteEmployeeByEmail(String email) {
 	    int rowsAffected = 0;
-	    String dbUrl = "jdbc:sqlserver://LENO\\SQLEXPRESS;databaseName=Adminstors;integratedSecurity=true;encrypt=false;portNumber=1433";
+	    String dbUrl = "jdbc:sqlserver://user\\SQLEXPRESS;databaseName=db_name;integratedSecurity=true;encrypt=false;portNumber=1433";
 	    try (Connection connection = DriverManager.getConnection(dbUrl);
 	         PreparedStatement preparedStatement = connection.prepareStatement("DELETE FROM Employee WHERE Email = ?")) {
 	        preparedStatement.setString(1, email);
