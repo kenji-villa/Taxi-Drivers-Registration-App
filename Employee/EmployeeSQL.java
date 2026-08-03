@@ -9,7 +9,7 @@ public class EmployeeSQL {
     public void updateEmployeeInDatabase(Employee employee, String existingEmail) {
         // Database connection details
     	System.out.println("Deleting record for email2: " + existingEmail);
-    String dbUrl = "jdbc:sqlserver://LENO\\SQLEXPRESS;databaseName=Adminstors;integratedSecurity=true;encrypt=false;portNumber=1433";
+    String dbUrl = "jdbc:sqlserver://user\\SQLEXPRESS;databaseName=db_name;integratedSecurity=true;encrypt=false;portNumber=1433";
 
         // SQL UPDATE statement
         String sql = "UPDATE Employee SET Name = ?, PhoneNumber = ?, Address = ?, gender = ?, Dob = ?, Email = ? WHERE Email = ?";
